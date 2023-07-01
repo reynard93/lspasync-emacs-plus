@@ -157,6 +157,7 @@ class EmacsPlusAT30 < EmacsBase
     end
 
     args << "--with-modules"
+    args << "--with-tree-sitter"
     args << "--with-rsvg"
     args << "--without-pop" if build.with? "mailutils"
     args << "--with-xwidgets" if build.with? "xwidgets"
