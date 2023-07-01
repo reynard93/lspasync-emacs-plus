@@ -73,7 +73,7 @@ class EmacsPlusAT30 < EmacsBase
   # URL
   #
 
-  url "https://github.com/sebastiansturm/emacs.git", :branch => "json-rpc-30"
+  url "https://github.com/reynard93/emacs-lsp.git", :branch => "json-rpc-fix"
 
   #
   # Icons
@@ -122,7 +122,7 @@ class EmacsPlusAT30 < EmacsBase
     args << "--with-xml2"
     args << "--with-gnutls"
 
-    args << "--with-native-compilation" if build.with? "native-comp"
+    args << "--with-native-compilation"
     args << "--without-compress-install" if build.without? "compress-install"
 
     ENV.append "CFLAGS", "-g -Og" if build.with? "debug"
