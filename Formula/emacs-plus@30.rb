@@ -184,7 +184,7 @@ class EmacsPlusAT30 < EmacsBase
         end
       end
 
-      system "gmake", "bootstrap configure=default"
+      system "gmake", "clean"
 
       system "gmake", "install"
 
