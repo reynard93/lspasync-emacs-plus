@@ -73,7 +73,7 @@ class EmacsPlusAT30 < EmacsBase
   # URL
   #
 
-  url "https://github.com/emacs-mirror/emacs.git", :branch => "master"
+  url "https://github.com/sebastiansturm/emacs.git", :branch => "json-rpc-30"
 
   #
   # Icons
@@ -184,7 +184,7 @@ class EmacsPlusAT30 < EmacsBase
         end
       end
 
-      system "gmake"
+      system "gmake", "bootstrap"
 
       system "gmake", "install"
 
